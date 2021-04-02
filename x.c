@@ -1944,6 +1944,11 @@ run(void)
 				(handler[ev.type])(&ev);
 		}
 
+                /* Refresh before drawing */
+                cresize(0, 0);
+                redraw();
+                xhints();
+
 		/*
 		 * To reduce flicker and tearing, when new content or event
 		 * triggers drawing, we first wait a bit to ensure we got
