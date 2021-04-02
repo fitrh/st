@@ -6,6 +6,15 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font = "SF Mono:pixelsize=14:antialias=true:autohint=true";
+/* Spare fonts */
+static char *font2[] = {
+        "FontAwesome:pixelsize=14:antialias=true:autohint=true",
+        "Material Design Icons Desktop:pixelsize=14:antialias=true:autohint=true",
+        "Wuncon Siji:pixelsize=14:antialias=true:autohint=true",
+        "Noto Color Emoji:pixelsize=14:antialias=true:autohint=true",
+        "Symbola:pixelsize=14:antialias=true:autohint=true"
+};
+
 static int borderpx = 16;
 
 /*
