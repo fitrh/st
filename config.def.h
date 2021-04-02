@@ -4,6 +4,8 @@
  * appearance
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
+ * borderperc: percentage of cell width to use as a border
+ *		0 = no border, 100 = border width is same as cell width
  */
 static char *font = "SF Mono:pixelsize=14:antialias=true:autohint=true";
 /* Spare fonts */
@@ -15,7 +17,9 @@ static char *font2[] = {
         "Symbola:pixelsize=14:antialias=true:autohint=true"
 };
 
+static unsigned int borderinpx = 1; /* 0 means using borderperc as border */
 static int borderpx = 16;
+static int borderperc = 100;
 
 /*
  * What program is execed by st depends of these precedence rules:
