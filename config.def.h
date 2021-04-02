@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
-static int borderpx = 2;
+static char *font = "SF Mono:pixelsize=14:antialias=true:autohint=true";
+static int borderpx = 16;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -16,7 +16,7 @@ static int borderpx = 2;
  * 4: value of shell in /etc/passwd
  * 5: value of shell in config.h
  */
-static char *shell = "/bin/sh";
+static char *shell = "/usr/local/bin/fish";
 char *utmp = NULL;
 /* scroll program: to enable use a string like "scroll" */
 char *scroll = NULL;
@@ -34,7 +34,7 @@ static float chscale = 1.0;
  *
  * More advanced example: L" `'\"()[]{}"
  */
-wchar_t *worddelimiters = L" ";
+wchar_t *worddelimiters = L" `'\"()[]{}";
 
 /* selection timeouts (in milliseconds) */
 static unsigned int doubleclicktimeout = 300;
@@ -74,7 +74,7 @@ static unsigned int cursorthickness = 2;
 static int bellvolume = 0;
 
 /* default TERM value */
-char *termname = "st-256color";
+char *termname = "st";
 
 /*
  * spaces per tab
@@ -91,35 +91,35 @@ char *termname = "st-256color";
  *
  *	stty tabs
  */
-unsigned int tabspaces = 8;
+unsigned int tabspaces = 4;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
+	"#32344a",
+	"#f7768e",
+	"#9ece6a",
+	"#e0af68",
+	"#7aa2f7",
+	"#ad8ee6",
+	"#449dab",
+	"#787c99",
 
 	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
+	"#444b6a",
+	"#ff7a93",
+	"#b9f27c",
+	"#ff9e64",
+	"#7da6ff",
+	"#bb9af7",
+	"#0db9d7",
+	"#acb0d0",
 
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#cccccc",
-	"#555555",
+        "#1a1b26",
+        "#a9b1d6"
 };
 
 
@@ -127,10 +127,10 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 7;
-unsigned int defaultbg = 0;
-static unsigned int defaultcs = 256;
-static unsigned int defaultrcs = 257;
+unsigned int defaultfg = 257;
+unsigned int defaultbg = 256;
+static unsigned int defaultcs = 257;
+static unsigned int defaultrcs = 256;
 
 /*
  * Default shape of cursor
@@ -145,8 +145,8 @@ static unsigned int cursorshape = 2;
  * Default columns and rows numbers
  */
 
-static unsigned int cols = 80;
-static unsigned int rows = 24;
+static unsigned int cols = 92;
+static unsigned int rows = 30;
 
 /*
  * Default colour and shape of the mouse cursor
