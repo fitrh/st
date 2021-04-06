@@ -170,8 +170,8 @@ static unsigned int cursorshape = 2;
  * Default columns and rows numbers
  */
 
-static unsigned int cols = 92;
-static unsigned int rows = 30;
+static unsigned int cols = 88;
+static unsigned int rows = 28;
 
 /*
  * Default colour and shape of the mouse cursor
