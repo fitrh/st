@@ -100,6 +100,7 @@ void drawboxes(
 #endif
 
 
+void copyurl(const Arg *);
 void printscreen(const Arg *);
 void printsel(const Arg *);
 void sendbreak(const Arg *);
