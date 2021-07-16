@@ -12,6 +12,7 @@ static char *font = "SF Mono:pixelsize=14:antialias=true:autohint=true";
 static char *font2[] = {
         "FontAwesome:pixelsize=14:antialias=true:autohint=true",
         "Material Design Icons Desktop:pixelsize=14:antialias=true:autohint=true",
+        "codicon:pixelsize=14:antialias=true:autohint=true",
         "Wuncon Siji:pixelsize=14:antialias=true:autohint=true",
         "Noto Color Emoji:pixelsize=14:antialias=true:autohint=true",
         "Symbola:pixelsize=14:antialias=true:autohint=true"
