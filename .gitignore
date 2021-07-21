@@ -3,6 +3,7 @@
 *.orig
 *.patch
 *.rej
+.cache/
 compile_commands.json
 config.h
 st
