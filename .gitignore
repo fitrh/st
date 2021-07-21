@@ -1,0 +1,8 @@
+*.diff
+*.o
+*.orig
+*.patch
+*.rej
+compile_commands.json
+config.h
+st
