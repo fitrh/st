@@ -19,7 +19,7 @@ static char *font2[] = {
 };
 
 static unsigned int borderinpx = 1; /* 0 means using borderperc as border */
-static int borderpx = 16;
+static int borderpx = 24;
 static int borderperc = 100;
 
 /*
