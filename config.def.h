@@ -7,7 +7,7 @@
  * borderperc: percentage of cell width to use as a border
  *		0 = no border, 100 = border width is same as cell width
  */
-static char *font = "SF Mono:pixelsize=14:antialias=true:autohint=true";
+static char *font = "SF Mono:style=Medium:pixelsize=14:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
         "FontAwesome:pixelsize=14:antialias=true:autohint=true",
